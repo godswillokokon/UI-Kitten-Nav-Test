@@ -21,13 +21,13 @@ export default (): React.ReactFragment => {
 
   return (
     <React.Fragment>
-      <IconRegistry icons={EvaIconsPack}/>
+      <IconRegistry icons={EvaIconsPack} />
       <ApplicationProvider
         mapping={mapping}
         theme={light}>
         <SafeAreaProvider>
           <NavigationNativeContainer>
-            <AppNavigator initialRouteName={isAuthorized ? AppRoute.HOME : AppRoute.AUTH}/>
+            <AppNavigator initialRouteName={isAuthorized ? AppRoute.HOME : AppRoute.AUTH} />
           </NavigationNativeContainer>
         </SafeAreaProvider>
       </ApplicationProvider>

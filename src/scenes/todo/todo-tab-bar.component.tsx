@@ -25,7 +25,7 @@ export const TodoTabBar = (props): SafeAreaLayoutElement => {
   return (
     <SafeAreaLayout insets={SaveAreaInset.TOP}>
       <Toolbar
-        title='React Navigation Ex 🐱-Kitten'
+        title='React Navigation Ex 🐱'
         backIcon={MenuIcon}
         onBackPress={props.navigation.toggleDrawer}
       />
