@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 import { AppRoute } from './app-routes';
 import { SignInScreen, SignUpScreen, ResetPasswordScreen } from '../scenes/auth';
 

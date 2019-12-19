@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TodoNavigator } from './todo.navigator';
 import { ProfileNavigator } from './profile.navigator';
 import { AppRoute } from './app-routes';
-import { HomeTabBar, HomeDrawer, AboutScreen, } from '../scenes/home';
+import { HomeTabBar, HomeDrawer, AboutScreen } from '../scenes/home';
 import { HomeIcon, InfoIcon, LayoutIcon, PersonIcon } from '../assets/icons';
 
 const Drawer = createDrawerNavigator();
@@ -15,12 +15,12 @@ const HomeBottomNavigator = (): React.ReactElement => (
     <BottomTab.Screen
       name={AppRoute.TODO}
       component={TodoNavigator}
-      options={{ title: 'PICTURES', tabBarIcon: LayoutIcon }}
+      options={{ title: 'TODO', tabBarIcon: LayoutIcon }}
     />
     <BottomTab.Screen
       name={AppRoute.PROFILE}
       component={ProfileNavigator}
-      options={{ title: 'DASHBOARD', tabBarIcon: PersonIcon }}
+      options={{ title: 'PROFILE', tabBarIcon: PersonIcon }}
     />
   </BottomTab.Navigator>
 );
@@ -32,7 +32,6 @@ export const HomeNavigator = (): React.ReactElement => (
       component={HomeBottomNavigator}
       options={{ title: 'Home', drawerIcon: HomeIcon }}
     />
-
     <Drawer.Screen
       name={AppRoute.ABOUT}
       component={AboutScreen}
