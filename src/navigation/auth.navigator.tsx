@@ -25,7 +25,7 @@ export interface ResetPasswordScreenProps {
   route: RouteProp<AuthNavigatorParams, AppRoute.RESET_PASSWORD>;
 }
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<AuthNavigatorParams>();
 
 export const AuthNavigator = (): React.ReactElement => (
   <Stack.Navigator headerMode='none'>
