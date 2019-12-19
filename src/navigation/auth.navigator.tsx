@@ -1,4 +1,5 @@
 import React from 'react';
+import { RouteProp } from '@react-navigation/core';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 import { AppRoute } from './app-routes';
 import { SignInScreen, SignUpScreen, ResetPasswordScreen } from '../scenes/auth';
@@ -8,6 +9,7 @@ type AuthNavigatorParams = {
   [AppRoute.SIGN_UP]: undefined;
   [AppRoute.RESET_PASSWORD]: undefined;
 }
+
 
 
 const Stack = createStackNavigator();
